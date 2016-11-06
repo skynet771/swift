@@ -22,7 +22,20 @@ public class Task4_PersonCharacteristics {
         String userInput = scan.nextLine();
         
         arr = userInput.split(","); 
-        Person p1 = new Person(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8],arr[9],arr[10]);
+        String firstName = arr[0];
+        String lastName = arr[1];
+        char gender = arr[2].charAt(0);
+        int yearOfBirth = Integer.parseInt(arr[3]);
+        double weight = Double.parseDouble(arr[4]);
+        double height = Double.parseDouble(arr[4]);
+        String profession = arr[5];
+        double[] grades = new double[4];
+        grades[0] = Double.parseDouble(arr[6]);
+        grades[1] = Double.parseDouble(arr[7]);
+        grades[2] = Double.parseDouble(arr[8]);
+        grades[3] = Double.parseDouble(arr[9]);
+         
+        Person p1 = new Person(firstName, lastName, gender, yearOfBirth, weight, height, profession, grades);
         p1.getInfo();
     }
      
