@@ -20,7 +20,7 @@ public class Task2b_PrintSortedNumbers {
         for(int i =0;i<numbers;i++){
             arr[i] = scan.nextInt();
         } 
-        //Arrays.sort(arr);
+        Arrays.sort(arr);
          
       //  }
         /*Anorther way to do it, with insertion sort
